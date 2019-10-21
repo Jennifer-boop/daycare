@@ -12,14 +12,26 @@ background medarbetare: #C5C8C7;
 
 
 .div_1 {                        /*Bakgrund till menyn*/
-    border: 1px solid black;
+    border-top: 1px solid #F1F1ED;
+    border-bottom: 1px solid #F1F1ED;
     width: 100%;
     height: 10rem;
+    background-color: #4F4F4F;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menybar {
+    width: 90%;
+    height: 8rem;
+    border: 2px solid #F1F1ED;
     display: flex;
     list-style: none;
     justify-content: space-evenly;
     align-items: center;
-    background-color: #C9BFB5;
+    background-color: #C5C8C7;
+    box-shadow: 0 12px 12px 0 rgba(190, 189, 189, 0.2), 0 20px 20px 0 rgba(202, 201, 201, 0.19);
 }
 
 #logga {
@@ -28,59 +40,81 @@ background medarbetare: #C5C8C7;
     border: 2px solid black;
 }
 
-.meny {                         /*Menyn i text*/
+                    /*Menyn i text*/
+.meny {             
     font-family: "Allerta Stencil", Sans-serif;
     font-size: 30px;
     background-color: transparent;
-    border: none;
-    color: #F1F1ED;
+    color: #4F4F4F;
     text-decoration: none;
+    text-shadow: 2px 2px 5px grey;
 }
 
-.header_1 {                     /*Välkommenbild*/
+a:link {
+    color: #4F4F4F;
+}
+
+a:hover {
+    background: #C5C8C7;
+    color: #F1F1ED;
+}
+
+                     /*Välkommenbild*/
+.header_1 {          
     height: 40rem;
     text-align: center; 
     background: url("dogheader.jpg");
     background-size: cover;
 }
-
-h1 {                             /*Välkommentext*/
+                    /*Välkommentext*/
+h1 {                
     padding: 40px;
     font-size: 5rem;
     color: #F8F9FB;
     font-family: "Allerta Stencil", Sans-serif;
 }
-
+                    /*Tjänster*/
 .div_tjanster {
     width: 100%;
-    height: 25rem;
-    border-top: 2px solid black;
-    border-bottom: 2px solid black;
+    height: 35rem;
+    border-top: 2px solid #4F4F4F;
+    border-bottom: 2px solid #4F4F4F;
     background-color: #D8DAD7;
+    display: flex; 
+    justify-content: center;
+    justify-content: space-evenly;
 }
 
 .lista_tjanster {
-    width: 100%;
-    height: 25rem;
+    width: 80%;
+    height: 24rem;
     display: flex;
     display: row;
-    margin-top: 80px;
+    justify-content: center;
     justify-content: space-evenly;
+    margin-top: 100px;
     list-style: none;
     font-family: "Allerta Stencil", Sans-serif;
+    border: 2px solid #F1F1ED;
+    background-color: #C5C8C7;
 }
 
 .tjanst1,
 .tjanst2,
 .tjanst3 {
-    height: 10rem;
+    height: 22rem;
     width: 20rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 2rem;
 }
 
 h2 {
     font-family: "Allerta Stencil", Sans-serif;
     text-align: center;
-    margin: 10px 2px;
+    margin: 15px 2px;
+    display: center;
+    justify-content: center;
 }
 
 #p_hundpassning {
@@ -98,7 +132,7 @@ h2 {
     text-align: center;
 }
 
-
+                    /*Medarbetare*/
 .medarbetare {
     width: 100%;
     display: flex;
@@ -106,13 +140,15 @@ h2 {
     justify-content: space-between;
     padding: 100px 20px;
     background-color: #C5C8C7;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-row-gap: 100px;
 }
 
 .img-with-text {
     text-align: justify;
     width: 425px;
 }
-
 .img-with-text img {
     display: block;
     margin: 0 auto;
@@ -120,15 +156,15 @@ h2 {
 
 .bild_medarbetare {
     border-radius: 30px 7px;
+    border: 1px solid #F1F1ED;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-
 .bildtext_namn {
     text-align: left;
     font-family: "Allerta Stencil", Sans-serif;
     font-size: 15px;
     padding: 5px 0px;
 }
-
 .bildtext_text {
     text-align: left;
     font-family: "Allerta Stencil", Sans-serif;
@@ -138,39 +174,46 @@ h2 {
     width: 410px;
     font-style: italic;
 }
-
 .bildtext_titel {
     font-size: 10px;
     padding: 5px 0px;
 }
-
 .bildtext_ikoner {
     text-align: left;
 }
 
+.medarbetare1 {
+    grid-column: 1;
+}
+.medarbetare2 {
+    grid-column: 2;
+}
+.medarbetare3 {
+    grid-column: 3;
+}
 .div_2 {
     width:100%;
     height: 30rem;
     border-top: 2px solid #4F4F4F;
     border-bottom: 2px solid #4F4F4F;
     padding: 1rem;
-    background-color: #D8DAD7;
-    
+    background-color: #D8DAD7;   
 }
-/* Style inputs with type="text", select elements and textareas */
+                    /*Formulär*/
 .section_formular {
-    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    box-sizing: border-box;
     margin: 40px;
-    resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
-    border: 1px solid #F1F1ED; /* Gray border */
-    border-radius: 4px; /* Rounded borders */
+    resize: vertical;
+    border: 2px solid #F1F1ED; 
+    border-radius: 4px; 
     position: absolute;
     width: 40%;
     height: 20rem;
     right: 6%;
     padding: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-  /* Style the submit button with a specific background color etc */
+                    /*Knapp för att skicka meddelande*/
 .knapp_skicka {
     background-color: #4F4F4F;
     color: white;
@@ -182,18 +225,24 @@ h2 {
     font-family: "Allerta Stencil", Sans-serif;
 }
 
+.knapp_skicka:hover {
+    color: black;
+    border: 2px solid #F1F1ED;
+}
+                        /*Textruta bredvid formulär*/
 .section_text {
     width: 40%;
     position: absolute;
     height: 20rem;
-    border: 1px solid #F1F1ED; /* Gray border */
-    border-radius: 4px; /* Rounded borders */
-    box-sizing: border-box; /* Make sure that padding and width stays in place */
-    margin-top: 40px; /* Add a top margin */
+    border: 2px solid #F1F1ED;
+    border-radius: 4px; 
+    box-sizing: border-box;
+    margin-top: 40px; 
     margin-bottom: 5px;
     margin-right: 5px;
     left: 6%;
     font-family: "Allerta Stencil", Sans-serif;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 #form_namn {
@@ -215,74 +264,261 @@ h2 {
     font-family: "Allerta Stencil", Sans-serif;
 }
 
+
+                        /*Sista sektionen med kontaktuppgifter*/
 .footer {
     width: 100%; 
     height: 20rem;
-    background-color: #C5C8C7;
+    background-color: #4F4F4F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .ruta_kontakt {
-    width: 100%;
-    height: 20rem;
+    width: 90%;
+    height: 15rem;
     display: flex;
     display: row;
     justify-content: center;
     align-items: center;
     justify-content: space-evenly;
     list-style: none;
-    padding-top: 5rem;
+    padding: 2rem 2rem;
+    border: 2px solid #F1F1ED;
+    background-color: #C5C8C7;
 }
 
 .p_formulartext {
     padding-top: 2rem;
+    padding-right: 3rem; 
+    padding-left: 3rem; 
 }
 
 .text_omoss {
-    height: 20rem;
+    height: 15rem;
     width: 20rem;
 }
 
 .p_omoss {
     font-family: "Allerta Stencil", Sans-serif;
     font-size: 13px;
-    padding: 4px 5px;
+    padding: 2px 5px;
     line-height: 18px;
+}
+
+.p_omoss_copy {
+    font-family: "Allerta Stencil", Sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+    display: flex;
+    padding-top: 25%;
+    text-align: center;
+}
+
+#copyright {
+    padding-left: 48%;
 }
 
 .ikoner {
     font-size: 20px;
-    margin: 30px 5px;
-
+    margin: 20px 5px;
+    padding: 3px 25px;
 }
 
 .text_snabblankar {
-    height: 20rem;
+    height: 15rem;
     width: 20rem;
 }
 
 h3 {
     font-family: "Allerta Stencil", Sans-serif;
-    margin: 20px 5px;
+    margin: 10px 5px 1px 10px;
     color:#4F4F4F;
+    padding: 25px 20px 10px 18px; 
 }
-
-
 
 .meny2 {
     font-family: "Allerta Stencil", Sans-serif;
-    margin: 10px 5px;
+    margin: 5px 5px;
     text-decoration: none;
     color: black; 
+}
 
+.meny2:hover {
+    color: #F1F1ED;
+}
+
+.adress {
+    height: 15rem;
+    width: 15rem;
+}
+
+.bild_karta {
+    height: 175px;
+    width: 175px;
+    margin: 20px 5px;
+    padding-left: 2px;
 }
 
 .text_foljoss {
-    height: 20rem;
+    height: 15rem;
     width: 20rem;
-
 }
 
 h5 {
     text-decoration: none;
     font-size: 15px;
+    padding: 1px 20px; 
+}
+                            /* Media queries */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .meny{
+        font-size: 25px;
+    }
+    h1 {
+        font-size: 38px;
+        color: #4F4F4F;
+    }
+    #logga {
+        width: 4rem;
+        height: 4rem;
+    }
+    .header_1 {
+        background: url(dog-mediaq-2.jpg);
+        background-size: cover;
+        height: 60rem;
+    }
+
+    h2 {
+        display: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .div_tjanster {
+        height: 60rem;
+    }
+
+    .lista_tjanster {
+        width: auto;
+        height: 52rem;
+        display: table-column; 
+        justify-content: center;
+        padding-right: 2rem;
+        padding-bottom: 0px;
+    }
+
+    .tjanst1 {
+        height: 15rem;
+        margin-bottom: 3rem;
+    }
+    .tjanst2 {
+        height: 15rem;
+    }
+    .tjanst3 {
+        height: 12rem;
+        margin-bottom: 2rem;
+    }
+
+    .medarbetare {
+        padding-left: 15rem;
+    }
+    .medarbetare1 {
+        grid-column: 1/3;
+        justify-self: center;
+    }
+    .medarbetare2 {
+        grid-column: 1/3;
+        justify-self: center;
+    }
+    .medarbetare3 {
+        grid-column: 1/3;
+        justify-self: center;
+    }
+    .section_text {
+        overflow: auto;
+        overflow: scroll;
+    }
+    
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+    .meny {
+        font-size: 18px;
+    }
+    h1 {
+        font-size: 35px;
+    }
+    #logga {
+        width: 3rem;
+        height: 3rem;
+    }
+    .header_1 {
+        background: url(dog-mediaq-3.jpg);
+        background-size: cover;
+        height: 40rem;
+    }
+
+    h2 {
+        display: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .div_tjanster {
+        height: 60rem;
+    }
+    .lista_tjanster {
+        height: 52rem;
+        width: auto;
+        display: table-column;
+        padding-right: 2rem;
+    }
+
+    .tjanst1 {
+        height: 15rem;
+        margin-bottom: 3rem;
+    }
+    .tjanst2 {
+        height: 15rem;
+    }
+    .tjanst3 {
+        height: 12rem;
+        margin-bottom: 2rem;
+    }
+
+    .medarbetare {
+        display: grid;
+        grid-template-columns: 1fr;
+        padding-left: 5rem;
+        grid-row-gap: 100px;
+    }
+
+    .medarbetare1 {
+        grid-column: 1/3;
+        justify-self: center;
+    }
+    .medarbetare2 {
+        grid-column: 1/3;
+        justify-self: center;
+    }
+    .medarbetare3 {
+        grid-column: 1/3;
+        justify-self: center;
+    }
+    .section_text {
+        overflow: auto;
+        overflow: scroll;
+    }
+
+    .p_omoss_copy {
+        padding-top: 3rem;
+        font-size: 8px;
+    }
+
+    .meny2 {
+        font-size: 8px;
+    }
 }

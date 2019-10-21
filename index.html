@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="sv">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,13 +12,16 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Allerta+Stencil">
 
 </head>
+
 <body>
     <div id="hem" class="div_1">
-        <li><img id="logga" src="tasslogga.png" alt="Logga"></li>
-        <li class="meny"><a href="#hem" class="meny">Hem</a></li> 
-        <li class="meny"><a href="#medarbetare" class="meny">Om Oss</a></li>
-        <li class="meny"><a href="#tjanster" class="meny">Tjänster</a></li>
-        <li class="meny"><a href="#formular" class="meny">Kontakt</a></li>
+        <ul class="menybar">
+            <li><img id="logga" src="tasslogga.png" alt="Logga"></li>
+            <li class="meny"><a href="#hem" class="meny">Hem</a></li>
+            <li class="meny"><a href="#medarbetare" class="meny">Om Oss</a></li>
+            <li class="meny"><a href="#tjanster" class="meny">Tjänster</a></li>
+            <li class="meny"><a href="#formular" class="meny">Kontakt</a></li>
+        </ul>
     </div>
 
 
@@ -26,97 +30,106 @@
     </header>
 
     <div id="tjanster" class="div_tjanster">
-        <section class="lista_tjanster">
+        <ul class="lista_tjanster">
             <li class="tjanst1">
                 <h2>Hundpassning</h2>
-                <p id="p_hundpassning">Måste du bort över dagen eller kanske planerar en resa dit din hund inte kan följa med? Vi har hundpassning för alla tillfällen då du inte kan ta med din fyrbenta vän! Du bestämmer om du vill att hundpassaren kommer till ert hem eller om hunden får göra en sleep-over! </p>
+                <p id="p_hundpassning">Måste du bort över dagen eller kanske planerar en resa dit din hund inte kan
+                    följa med? Vi har hundpassning för alla tillfällen då du inte kan ta med din fyrbenta vän! Du
+                    bestämmer om du vill att hundpassaren kommer till ert hem eller om hunden får göra en sleep-over!
+                </p>
             </li>
             <li class="tjanst2">
                 <h2>Lydnadskurser</h2>
-                <p id="p_lydnadskurser">Känner du att era promenader inte är så harmoniska som du hoppats på? Eller vill du kanske förstå din hund bättre eller bara få någon annans synpunkt på vad ni kan göra för att komma vidare i er träning?
-                                        Vi har lång erfarenhet och kan hjälpa er att få en vardag som både du och din hund kommer att uppskatta!</p>
+                <p id="p_lydnadskurser">Känner du att era promenader inte är så harmoniska som du hoppats på? 
+                    Vi har lång erfarenhet och kan hjälpa er att få en vardag som både du och din hund kommer att
+                    uppskatta!</p>
             </li>
             <li class="tjanst3">
                 <h2>Rastning</h2>
-                <p id="p_rastning">Passar inte hunddagis och ni behöver nu hitta en ny lösning för att er vardag ska gå ihop? Med oss kan du enkelt boka tid för när du vill att rastningen ska ske och hur lång promenad ni anser behövs för att er hund ska känna sig tillfredställd.
-                                    Vi har både lösningar för enstaka tillfällen, men även för ett längre samarbete där vi tillsammans lägger upp ett schema.</p>
+                <p id="p_rastning">Passar inte hunddagis och ni behöver nu hitta en ny lösning för att er vardag ska gå
+                    ihop? Med oss kan du enkelt boka tid för när du vill att rastningen ska ske och hur lång promenad ni
+                    anser behövs för att er hund ska känna sig tillfredställd.</p>
             </li>
-        </section>
+        </ul>
     </div>
 
     <div id="medarbetare" class="medarbetare">
-            <div class="medarbetare1">
-                <img class="bild_medarbetare" src="medarbetare11.jpg" alt="sometext"/>
-                <p class="bildtext_namn">David<br>
+        <div class="medarbetare1">
+            <img class="bild_medarbetare" src="medarbetare11.jpg" alt="sometext" />
+            <p class="bildtext_namn">David<br>
                 <span class="bildtext_titel">Hundpassare & CEO</span></p>
-                <p class="bildtext_text">"Jag startade det här företaget 2003, när jag själv skaffat hund och såg att utbud inte mötte efterfrågan. Jag ville inte ha min hund på dagis, utan sökte ett alternativ som passade mig och min livssituation. Jag älskar varje dag på mitt jobb, att arbeta med människans bästa vän är något jag kommer vilja göra till pensionen!"</p>
-                <p class="bildtext_ikoner"> 
-                        <i class="fab fa-facebook-square"></i>
-                        <i class="fab fa-instagram"></i>
-                        <i class="fab fa-twitter-square"></i>
-                        <i class="fab fa-google"></i>
-                        <i class="fas fa-globe"></i>
-                    </p>
-            </div>
-            <div class="medarbetare2">
-                <img class="bild_medarbetare" src="medarbetare22.jpg" alt="sometext" />
-                <p class="bildtext_namn">Anna<br>
+            <p class="bildtext_text">"Jag startade det här företaget 2003, när jag själv skaffat hund och såg att utbud
+                inte mötte efterfrågan. Jag ville inte ha min hund på dagis, utan sökte ett alternativ som passade mig
+                och min livssituation. Jag älskar varje dag på mitt jobb, att arbeta med människans bästa vän är något
+                jag kommer vilja göra till pensionen!"</p>
+            <p class="bildtext_ikoner">
+                <i class="fab fa-facebook-square"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-twitter-square"></i>
+                <i class="fab fa-google"></i>
+                <i class="fas fa-globe"></i>
+            </p>
+        </div>
+        <div class="medarbetare2">
+            <img class="bild_medarbetare" src="medarbetare22.jpg" alt="sometext" />
+            <p class="bildtext_namn">Anna<br>
                 <span class="bildtext_titel">Hundrastare & marknadschef</span></p>
-                <p class="bildtext_text">"Jag trodde inte att man kunde ha såhär kul på jobbet! Jag har alltid brunnit för djur och att få tillbringa varje dag med dem gör mig både glad och energifylld! Är du intresserad av yrket så tveka inte, jag har inte ångrat det för en sekund! "</p>
-                <p class="bildtext_ikoner"> 
-                        <i class="fab fa-facebook-square"></i>
-                        <i class="fab fa-instagram"></i>
-                        <i class="fab fa-twitter-square"></i>
-                        <i class="fab fa-google"></i>
-                        <i class="fas fa-globe"></i>
-                    </p>
-            </div>
-            <div class="medarbetare3">
-                <img class="bild_medarbetare" src="medarbetare33.jpg" alt="sometext" />
-                <p class="bildtext_namn">Linnéa<br>
+            <p class="bildtext_text">"Jag trodde inte att man kunde ha såhär kul på jobbet! Jag har alltid brunnit för
+                djur och att få tillbringa varje dag med dem gör mig både glad och energifylld! Är du intresserad av
+                yrket så tveka inte, jag har inte ångrat det för en sekund! "</p>
+            <p class="bildtext_ikoner">
+                <i class="fab fa-facebook-square"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-twitter-square"></i>
+                <i class="fab fa-google"></i>
+                <i class="fas fa-globe"></i>
+            </p>
+        </div>
+        <div class="medarbetare3">
+            <img class="bild_medarbetare" src="medarbetare33.jpg" alt="sometext" />
+            <p class="bildtext_namn">Linnéa<br>
                 <span class="bildtext_titel">Hundrastare & ekonomichef</span></p>
-                <p class="bildtext_text">"Det bästa på dagen är att få träffa våra hundar! De är alltid så glada och fyllda av energi, man kan inte bli på dåligt humör med så glädje runt sig! Att sen få ta ut dem och se dem leka och undersöka världen gör att mitt jobb känns otroligt viktigt!"</p>
-                <p class="bildtext_ikoner"> 
-                    <i class="fab fa-facebook-square"></i>
-                    <i class="fab fa-instagram"></i>
-                    <i class="fab fa-twitter-square"></i>
-                    <i class="fab fa-google"></i>
-                    <i class="fas fa-globe"></i>
-                </p>
-            </div>
+            <p class="bildtext_text">"Det bästa på dagen är att få träffa våra hundar! De är alltid så glada och fyllda
+                av energi, man kan inte bli på dåligt humör med så glädje runt sig! Att sen få ta ut dem och se dem leka
+                och undersöka världen gör att mitt jobb känns otroligt viktigt!"</p>
+            <p class="bildtext_ikoner">
+                <i class="fab fa-facebook-square"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-twitter-square"></i>
+                <i class="fab fa-google"></i>
+                <i class="fas fa-globe"></i>
+            </p>
+        </div>
     </div>
 
     <div id="formular" class="div_2">
-        <section class="section_formular"> 
+        <div class="section_formular">
             <input type="text" id="form_namn" name="namn" placeholder="Namn:">
-                  
-        <br><input type="text" id="form_email" name="efternamn" placeholder="E-mailadress:">
-                  
-        <br><textarea id="text_meddelande" name="meddelande" placeholder="Skriv ditt meddelande här..."></textarea>
-                  
-        <br><input class="knapp_skicka" type="button" value="Skicka">   
-        </form>
-        </section>
+
+            <br><input type="text" id="form_email" name="efternamn" placeholder="E-mailadress:">
+
+            <br><textarea id="text_meddelande" name="meddelande" placeholder="Skriv ditt meddelande här..."></textarea>
+
+            <br><input class="knapp_skicka" type="button" value="Skicka">
+        </div>
 
         <section class="section_text">
             <h2>Kontakta oss!</h2>
             <p class="p_formulartext">
-            Vi är ett glatt team som älskar hundar och som brinner för uppfostran och lek, dagarna långa! Alla som jobbar hos oss har utbildning och lång arbetslivserfarenhet av hundar! <br> För att du ska känna dig trygg så skickar vi bilder på din hund under hela dagen så att du kan vara med och se din fyrbenta under hela passningen! 
-            <br> Har du någon fundering eller kanske vill boka en tid för att få träffa oss så skicka gärna ett meddelande till oss, så återkommer vi till dig så fort vi kan!  
+                Vi är ett glatt team som älskar hundar och som brinner för uppfostran och lek, dagarna långa! Alla som
+                jobbar hos oss har utbildning och lång arbetslivserfarenhet av hundar! <br> För att du ska känna dig
+                trygg så skickar vi bilder på din hund under hela dagen så att du kan vara med och se din fyrbenta under
+                hela passningen!
             </p>
 
         </section>
     </div>
 
     <footer class="footer">
-        <div class="ruta_kontakt">
+        <ul class="ruta_kontakt">
             <li class="text_omoss">
-                <h3>Tveka inte att höra av dig!</h3>
-                    <p class="p_omoss">Har du några frågor eller funderingar? Skicka gärna ett meddelande till oss så återkommer vi så fort vi kan! Du vet väl att du även kan gå in på våra sociala kanaler och följa vårt arbete? </p>
-                        <br>
-                    <p class="p_omoss">Innehållet på denna webbplats är upphovsrättsskyddat och tillhör Tramptass AB.
-                <br>
-                Copyright <i class="far fa-copyright"></i></p>  
+                <p class="p_omoss_copy">Innehållet på denna webbplats är upphovsrättsskyddat och tillhör Tramptass AB. <br> Copyright</p>
+                <i id="copyright" class="far fa-copyright"></i>
             </li>
 
             <li class="text_snabblankar">
@@ -125,28 +138,39 @@
                     <h5 class="meny2"><a class="meny2" href="#hem">Hem</a></h5>
                     <h5 class="meny2"><a class="meny2" href="#medarbetare">Om Oss</a></h5>
                     <h5 class="meny2"><a class="meny2" href="#tjanster">Tjänster</a></h5>
-                    <h5 class="meny2"><a class="meny2" href="#formular">Kontakt</a></h5> 
+                    <h5 class="meny2"><a class="meny2" href="#formular">Kontakt</a></h5>
                 </section>
             </li>
 
-            <li class="text_foljoss">
-                <h3>Follow Us</h3>
-                    <h5 class="meny2">Twitter</h5>
-                    <h5 class="meny2">Facebook</h5>
-                    <h5 class="meny2">Instagram</h5>
-                    <h5 class="meny2">Google Plus</h5>
+            <li class="adress">
+                <h3>Besök oss</h3>
+                <p class="p_omoss">Varmt välkomna att hälsa på oss! Vi finns på: 
+                    <br>Drottninggatan 34
+                        111 51 Stockholm</p>
+            </li>
+            <li class="karta">
+                <iframe class="bild_karta" src="https://www.google.com/maps/d/u/0/embed?mid=1kZYpUflcm4LMon1NBqaccw7i57Uef66m"></iframe>
+            </li>
 
-                    <div class="ikoner">
-                        <i class="fab fa-facebook-square"></i>
-                        <i class="fab fa-instagram"></i>
-                        <i class="fab fa-twitter-square"></i>
-                        <i class="fab fa-google"></i>
-                        <i class="fas fa-globe"></i>
-                    </div>
+            <li class="text_foljoss">
+                <h3>Följ oss</h3>
+                <h5 class="meny2"><a class="meny2" href="">Twitter</a></h5>
+                <h5 class="meny2"><a class="meny2" href="">Facebook</a></h5>
+                <h5 class="meny2"><a class="meny2" href="">Instagram</a></h5>
+                <h5 class="meny2"><a class="meny2" href="">Google Plus</a></h5>
+
+                <div class="ikoner">
+                    <i class="fab fa-facebook-square"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-twitter-square"></i>
+                    <i class="fab fa-google"></i>
+                    <i class="fas fa-globe"></i>
+                </div>
 
             </li>
-        </div>
+        </ul>
     </footer>
-    
+
 </body>
+
 </html>
